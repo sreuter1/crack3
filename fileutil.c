@@ -95,3 +95,16 @@ void freeAA(char ** arr, int size)
 	// free the array
 	free(arr);
 }
+
+// Adding in the function to perform a linear search using exact string matches
+char * linearSearch(char *target, char ** arr, int size)
+{
+	for(int i = 0; i < size; i++)
+	{
+		if (strcmp(target, arr[i])) // there is a match
+		{
+			return arr[i];
+		}
+	}
+	return NULL; 
+}
