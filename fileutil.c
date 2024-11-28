@@ -101,14 +101,10 @@ char * linearSearch(char *target, char ** arr, int size)
 {
 	for(int i = 0; i < size; i++)
 	{
-		if (strcmp(target, arr[i])) // there is a match
+		if (!strcmp(target, arr[i])) // there is a match
 		{
 			return arr[i];
 		}
 	}
 	return NULL; 
-}
-
-int main() {
-    return 0;
 }
