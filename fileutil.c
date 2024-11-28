@@ -108,3 +108,7 @@ char * linearSearch(char *target, char ** arr, int size)
 	}
 	return NULL; 
 }
+
+int main() {
+    return 0;
+}
